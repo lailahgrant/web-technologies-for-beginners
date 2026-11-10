@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <section>
+        <h2>Reserve a Table</h2>
+        <form action="">
+            <fieldset>
+                <legend>Personal Information</legend>
+                    <label>Full Name: *</label>
+                    <input type="text" name="fullName" required><br><br>
+
+                    <label for="email">Email: *</label>
+                    <input type="email" required name="email" id="email"> <br><br>
+
+                    <label for="phone">Phone Number: *</label>
+                    <input type="tel" required name="phone" id="phone"> 
+            </fieldset>  
+            
+            <fieldset>
+                <legend>Booking Details</legend>
+                <p>
+                <label>Date: *</label>
+                <input type="date" name="date" required>
+                </p>             
+
+                <p>
+                    <label>Time: *</label>
+                    <input type="time" name="time" required>
+                </p>
+
+                <p>
+                    <label>Number of Guests: *</label>
+                    <input type="number" min="2" max="10" name="guests" required>
+                </p>
+
+                <p>
+                    <label>Seating Preference:</label>
+                    <select name="seating">
+                        <option value="indoor">Indoor</option>
+                        <option value="outdoor">Outdoor</option>
+                        <option value="noPreference">No Preference</option>
+                    </select>
+                </p>  
+
+                <p>
+                    <label>Occasion:</label>
+                    <input type="radio" name="occasion" value="casual" checked>
+                    <label for="casual">Casual</label>
+                    <input type="radio" name="occasion" value="birthday">
+                    <label for="birthday">Birthday</label>
+                    <input type="radio" name="occasion" value="anniversary">
+                    <label for="anniversary">Anniversary</label>
+                    <input type="radio" name="occasion" value="other">
+                    <label for="other">Other</label>
+                    <input type="text" name="otherOccasion" placeholder="Please specify if other">
+                </p> 
+
+                <p>
+                    <label>Dietary Restrictions:</label>
+                    <input type="checkbox" name="dietary" value="vegetarian">
+                    <label for="vegetarian">Vegetarian</label>
+                    <input type="checkbox" name="dietary" value="vegan">
+                    <label for="vegan">Vegan</label>
+                    <input type="checkbox" name="dietary" value="glutenFree">
+                    <label for="glutenFree">Gluten-Free</label>
+                    <input type="checkbox" name="dietary" value="nutAllergy">
+                    <label for="nutAllergy">Nut Allergy</label>
+                </p>
+                
+                <p>
+                    <label>Special Requests:</label>
+                    <textarea name="requests" rows="4" cols="50"></textarea>
+                </p>
+
+            </fieldset>
+  
+            <br>
+
+            <button type="submit">Book Now</button>
+            <button type="reset">Reset</button>
+                        
+        </form>
+    </section>
+</body>
+</html>
